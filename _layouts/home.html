@@ -26,6 +26,10 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
+	
+	{%- if post.img -%}
+	  <img src="{{ site.baseurl}}/{{ post.img }}" style= "max-width: 800px; max-height: 450px" >
+	{%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
