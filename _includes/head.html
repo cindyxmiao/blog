@@ -14,4 +14,10 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
     {% endfor %}
   {% endif %}
+
+   {% if page.custom-js %}
+    {% for stylesheet in page.custom-js %}
+    <script src="{{ site.baseurl }}/assets/js/{{ stylesheet }}.js">
+    {% endfor %}
+  {% endif %}
 </head>

@@ -1,0 +1,49 @@
+.gridSquare{
+    border: 0.02px solid rgb(88, 149, 206);
+    display: inline-block;
+    margin: 0px;
+    padding: 0 px;
+    background-color: white;
+}
+
+#container{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 650px;
+    height: 650px;
+    font-size: 0;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 0 px;
+}
+h1{
+    font-family:'Lobster Two', Helvetica, sans-serif;
+    font-size: 40pt;
+    color: #2b2b2b;
+    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+body {
+    background: #f5f17d;
+}
+
+#buttonWrap{
+    text-align: center;
+}
+
+#painted {
+    background-color:black;
+}
