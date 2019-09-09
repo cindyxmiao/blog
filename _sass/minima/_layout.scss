@@ -4,12 +4,17 @@
 .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 2.5;
+  min-height: $spacing-unit * 4;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
+
+#header-wrap{
+  text-align: center;
+
+}
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
@@ -17,7 +22,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -28,11 +33,9 @@
 }
 
 .site-description{
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-weight: 200;
+  top: 60px;
+  position: relative;
   color: $brand-color
 
 }
@@ -40,6 +43,8 @@
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
+  position: relative;
+  top: 70px;
 
   .nav-trigger {
       display: none;
