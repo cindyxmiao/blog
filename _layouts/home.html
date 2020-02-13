@@ -15,7 +15,7 @@ layout: default
       {%- for post in site.posts -%}
       <li>
        {%- if post.emoji -%}
-	<i class="em {{post.emoji}}" aria-role="presentation" ></i> 
+	<i id = "emoji" class="em {{post.emoji}}" aria-role="presentation" ></i> 
         {%- endif -%}
 	<h5>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
