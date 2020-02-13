@@ -10,18 +10,23 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+   <br>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
+       {%- if post.emoji -%}
+	<i class="em {{post.emoji}}" aria-role="presentation" ></i> 
+        {%- endif -%}
+	<h5>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+        <span class="post-meta">{{ post.date | date: date_format }}</span> </h5>
+	<h3>
+ 
+	<a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-        </h3>
+	</h3>
+  
 	<p> {{post.summary}} <p>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
@@ -31,6 +36,7 @@ layout: default
 	  <img src="{{ site.baseurl}}/{{ post.img }}" style= "max-width: 750px; max-height: 550px; border-radius: 10px;" >
 	{%- endif -%}
       </li>
+ <br>
       {%- endfor -%}
     </ul>
    
