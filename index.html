@@ -1,0 +1,62 @@
+---
+layout: home
+---
+<!-- post list -->
+{%- if paginator.posts.size > 0 -%}
+  <br>
+  <ul class="post-list">
+    {%- for post in paginator.posts -%}
+    <li>
+      {%- if post.emoji -%}
+      <i id="emoji" class="em {{post.emoji}}" aria-role="presentation"></i>
+      {%- endif -%}
+      <h5>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span> </h5>
+      <h3>
+
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+
+      {%- if post.summary -%}
+      <p> {{post.summary}} <a href="{{ post.url | relative_url }}">Continue reading >> </a>  </p> 
+      {%- endif -%}
+
+      {%- if post.img -%}
+      <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage"> 
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  {%- endif -%}
+
+
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href= "{{ site.baseurl}}/">{{page}}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
