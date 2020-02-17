@@ -21,7 +21,19 @@
   text-align: center;
 }
 
+.rating{
+  float: right;
+  padding-right: 10px;
+}
+.ratingword{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 
+
+.checked {
+  color: orange;
+}
 /**
  * Site header
  */
