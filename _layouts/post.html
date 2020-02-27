@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 <br>
   <header class="post-header">
@@ -24,4 +30,6 @@ layout: default
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  <button onclick="goBack()"> &lt; &lt; Back</button>
+
 </article>

@@ -21,14 +21,16 @@ layout: home
       </h3>
 
       {%- if post.summary -%}
-      <p> {{post.summary}} <a href="{{ post.url | relative_url }}">Continue reading >> </a>  </p> 
+      <p> {{post.summary}}</p> 
       {%- endif -%}
 
       {%- if post.img -%}
       <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage"> 
       {%- endif -%}
+      <a href="{{ post.url | relative_url }}" class = "continue">Continue reading >> </a> 
     </li>
     {%- endfor -%}
+
   </ul>
 
   {%- endif -%}
