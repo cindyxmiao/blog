@@ -24,9 +24,14 @@ layout: home
       <p> {{post.summary}}</p> 
       {%- endif -%}
 
+      <!-- different css for images vs comics-->
       {%- if post.img -%}
       <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage"> 
       {%- endif -%}
+      {%- if post.comic -%}
+      <img src="{{ site.baseurl}}/{{ post.comic }}" id="comicHomeImage"> 
+      {%- endif -%}
+
       <a href="{{ post.url | relative_url }}" class = "continue">Continue reading &raquo; </a> 
     </li>
     {%- endfor -%}

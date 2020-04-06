@@ -188,8 +188,14 @@ button, .continue{
 }
 
 #homeimage{
-  max-width: 750px;
+  width: 100%; /* width of container */
+  height: 400px; /* height of container */
+  object-fit: cover;
   border-radius: 10px;
+}
+
+#comicHomeImage{
+  max-height : 400px;
 }
 .contact-list,
 .social-media-list {
