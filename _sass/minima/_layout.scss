@@ -51,6 +51,14 @@ button, .continue{
 .checked {
   color: orange;
 }
+
+/*code highlighting.js*/
+pre , code {
+  font-size: 14px;
+  border:none;
+  background-color: #fdfdfd;
+  border-radius: 5px;
+}
 /**
  * Site header
  */

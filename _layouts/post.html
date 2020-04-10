@@ -4,9 +4,17 @@ layout: default
 
 <script>
   function goBack() {
-    window.history.back();
+    const lastWebsite = document.referrer;
+    const website = "cindyxmiao.github.io/blog/";
+    const localHost = "http://localhost:4000/";
+    if (lastWebsite.includes(website) | lastWebsite.includes(localHost)){
+      window.history.back();
+    }
+    else{
+      location.href='{{site.baseurl}}/';
+    }
   }
-  </script>
+</script>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 <br>
   <header class="post-header">

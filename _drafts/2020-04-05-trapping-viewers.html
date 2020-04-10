@@ -1,0 +1,36 @@
+---
+layout: post
+title: "trapping viewers with a back button"
+summary: "It’s funny how fast things change. One day, I’m unattentive as my roommate talks about some virus that’s been
+discovered in China; and then the next day, our university shuts down as we prepare for online classes..."
+date: 2020-02-15 15:26:13 +0200
+permalink: /home-during-the-coronavirus-pandemic/
+img: /assets/img/bored_croped.png
+emoji: "em-ambulance"
+---
+
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css">
+
+<p>One day, a friend suggested me to add a back button re-directing to the home page on my pages. So naturally I go to
+  google, and do a search</p>
+
+<pre><code>
+    function goBack() {
+      const lastWebsite = document.referrer;
+      const website = "cindyxmiao.github.io/blog/";
+      const localHost = "http://localhost:4000/";
+      if (lastWebsite.includes(website) | lastWebsite.includes(localHost)){
+        window.history.back();
+      }
+      else{
+        location.href='{{site.baseurl}}/';
+      }
+    }
+</code></pre>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

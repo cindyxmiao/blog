@@ -18,6 +18,10 @@ layout: home
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
+        {% capture head %}
+        I am the head
+        {% endcapture %}
+        
       </h3>
 
       {%- if post.summary -%}
