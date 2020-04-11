@@ -1,0 +1,133 @@
+---
+layout: post
+title: "A Strange case: Why Are My Viewers Disappearing??"
+summary: "Not so long ago, my friend gave me a great idea of implementing a back button
+at the end of my blog pages and posts redirecting back to the homepage....so why did viewers start disappearing?"
+date: 2020-04-11 15:26:13 +0200
+permalink: /why-are-my-viewers-disappearing/
+emoji: "em-mag"
+---
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/a11y-dark.min.css"
+/>
+
+<p>
+  Not so long ago, my friend gave me a great idea of implementing a back button
+  at the end of my blog pages and posts redirecting back to the homepage.
+</p>
+<p>
+  Since I made the blog, I though clicking the “flow” in small letters to get
+  back to the homepage was pretty obvious, but I later realized it was
+  definitely not obvious to viewers who just landed on the site.
+</p>
+<p>So I googled it and viola!</p>
+
+<figcaption>HTML</figcaption>
+<pre><code>
+  &lt;form&gt;
+      &lt;input type="button" value="Go back" onclick="history.back()"&gt;
+  &lt;form&gt;
+</code>
+</pre>
+
+<p> This function is really good since it maintains the viewer’s
+  spot on the page. So if they were looking at page 2 of the posts and clicked
+  into post 3, they would get redirected back to the same location, and could
+  scroll to post 4, etc. Don’t you hate it when you click back, and lose your
+  spot on the page?</p>
+
+<p>So we're done now, right? Or so I thought.</p>
+
+<p>According to Computerhope:</p>
+
+<blockquote>
+  “In a web browser, the built-in JavaScript object window has an object called
+  history that contains the URLs a user has visited in their current browser
+  window. You can use the history.back() method to tell the browser to go back
+  to the user's previous page.”
+</blockquote>
+
+<p>
+  Yada yada yada. Who cares. I just like copying and pasting code. But there was
+  a great big problem here--do you see it?
+</p>
+
+<p>
+  Well I didn’t for a long time. Then, when I was looking at the site’s traffic
+  through google analytics, I spied some unusual behaviour.
+</p>
+
+<img src="{{site.baseurl}}/assets/img/behavior_flow.png" alt="cars" />
+<figcaption>
+  Inside Google Analytics, a tool to analyze website traffic: From this flow
+  chart, one can see the behavior flow of site visitors.
+</figcaption>
+<br />
+
+<p>
+  There were 2 users who searched some keywords in google, and clicked on my
+  blog (Yay!). But then, they immediately left the blog without going back to
+  the homepage or visiting any other posts. Is my blog really that bad? Or was
+  something else peculiar happening?
+</p>
+
+<p>
+  So I traced their route myself. I googled one of my blog posts, and clicked
+  in. Then, I pressed the back button at the end of the post to supposedly go
+  back to the homepage, but guess where I was? Back to google search results.
+</p>
+
+<p>
+  Basically, I was encouraging viewers to navigate out of the blog as soon as
+  possible.
+</p>
+<p>
+  There I was, thinking I was smart for implementing a back button in no time...
+</p>
+
+<p>I modified my code a bit to trap viewers instead:</p>
+<figcaption>HTML</figcaption>
+
+<pre><code>
+  &lt;form&gt;
+      &lt;input type="button" value="Go back" onclick="goBack()"&gt;
+  &lt;form&gt;
+</code>
+</pre>
+
+<figcaption>JavaScript</figcaption>
+<pre><code>
+    function goBack() {
+      const lastWebsite = document.referrer;
+      const website = "cindyxmiao.github.io/blog/";
+      const localHost = "http://localhost:4000/";
+      if (lastWebsite.includes(website) | lastWebsite.includes(localHost)){
+        window.history.back();
+      }
+      else{
+        location.href='{{site.baseurl}}/';
+      }
+    }
+</code></pre>
+
+<p>
+  Here, if a viewer previously came from another page on my blog, they would be
+  directed back to that page, using the built in JavaScript function
+  history.back() as before.<p>
+  
+  <p>
+  But if the user came from a search engine like google, they would be directed back
+  to the mainpage, not back to Google Search Results like the first implementation.
+</p>
+
+
+<p>⬇⬇⬇⬇⬇⬇Try out the button below⬇⬇⬇⬇⬇⬇⬇</p>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
