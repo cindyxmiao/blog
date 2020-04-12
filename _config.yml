@@ -17,7 +17,7 @@ title: flow
 email: 
 author: Cindy
 description: >- # this means to ignore newlines until "baseurl:"
-  An engineering student blog
+  an engineering student blog
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

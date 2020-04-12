@@ -2,19 +2,6 @@
 layout: default
 ---
 
-<script>
-  function goBack() {
-    const lastWebsite = document.referrer;
-    const website = "cindyxmiao.github.io/blog/";
-    const localHost = "http://localhost:4000/";
-    if (lastWebsite.includes(website) | lastWebsite.includes(localHost)){
-      window.history.back();
-    }
-    else{
-      location.href='{{site.baseurl}}/';
-    }
-  }
-</script>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 <br>
   <header class="post-header">
@@ -38,6 +25,6 @@ layout: default
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  <button onclick="goBack()"> &laquo; Back</button>
+  {%- include back-button.html -%}
 
 </article>
