@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+
+<script>
+  function goBack() {
+  location.href='{{site.baseurl}}/';
+  }
+</script>
+
 <article class="post">
 
   <header class="post-header">
@@ -11,6 +18,6 @@ layout: default
     {{ content }}
   </div>
 
-  {%- include back-button.html -%}
+  <button onclick="goBack()"> &laquo; Back</button>
 
 </article>
