@@ -2,14 +2,16 @@
 layout: home
 ---
 <!-- post list -->
+
+
 {%- if paginator.posts.size > 0 -%}
   <br>
   <ul class="post-list">
     {%- for post in paginator.posts -%}
     <li>
-      {%- if post.emoji -%}
+      <!-- {%- if post.emoji -%}
       <i id="emoji" class="em {{post.emoji}}" aria-role="presentation"></i>
-      {%- endif -%}
+      {%- endif -%} -->
       <h5>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span> </h5>
