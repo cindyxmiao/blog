@@ -1,3 +1,56 @@
+/*Side Bar*/
+body {
+  font-family: "Lato", sans-serif;
+}
+.useless-sidenav{
+  width: 20em;
+  position: relative;
+  // margin-left:auto;
+  background: burlywood;
+  visibility: hidden;
+
+}
+
+.sidenav {
+  width: 20em;
+  position: relative;
+  // background: lightcoral;
+  // margin-right:auto;
+  // margin-left:auto;
+}
+
+.popular-posts li{
+  padding: 6px 8px 6px 16px;
+  background-color: blueviolet;
+  display: block;
+  font-size: 1em;
+}
+
+// .sidenav a {
+//   padding: 6px 8px 6px 16px;
+//   text-decoration: none;
+//   font-size: 25px;
+//   display: block;
+//   background-color: blueviolet;
+// }
+
+.sidenav a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
 /**
  * Paginator navigator
  */
@@ -268,6 +321,8 @@ pre , code {
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .page-heading {
