@@ -3,26 +3,46 @@ body {
   font-family: "Lato", sans-serif;
 }
 .useless-sidenav{
+  margin-top: 3em;
   width: 20em;
   position: relative;
   // margin-left:auto;
   visibility: hidden;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: blue;
 
 }
 
 .sidenav {
+  margin-top: 3em;
   width: 20em;
   position: relative;
+  padding-right: 2em;
+  padding-left: 2em;
   // background: lightcoral;
   // margin-right:auto;
   // margin-left:auto;
 }
+.popular-posts div{
+  border-radius: 1em;
+  padding: 0 0 0 30px;
+}
+
+.popular-posts div:hover{
+  background-color: #f5f7f9;
+}
+
 
 .popular-posts li{
-  padding: 6px 8px 6px 16px;
-  background-color: blueviolet;
-  display: block;
+  display: list-item;
   font-size: 1em;
+  padding: 10px 0 10px 0;
+  
+}
+
+.popular-posts{
+  margin-left: 0px;
 }
 
 // .sidenav a {
