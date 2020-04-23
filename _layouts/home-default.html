@@ -8,10 +8,15 @@
   <body>
 
     {%- include header.html -%}
+
     <main class="page-content" aria-label="Content">
+      <div class = "useless-sidenav">
+      </div>
       <div class="wrapper">
         {{ content }}
       </div>
+      {%- include side-bar.html -%}
+
     </main>
 
     {%- include footer.html -%}

@@ -11,6 +11,7 @@ body {
   padding-left: 2em;
   padding-right: 2em;
   background-color: blue;
+  margin-right: 2em;
 
 }
 
@@ -20,6 +21,7 @@ body {
   position: relative;
   padding-right: 2em;
   padding-left: 2em;
+  margin-right: 2em;
   // background: lightcoral;
   // margin-right:auto;
   // margin-left:auto;
@@ -38,11 +40,11 @@ body {
   display: list-item;
   font-size: 1em;
   padding: 10px 0 10px 0;
-  
 }
 
 .popular-posts{
   margin-left: 0px;
+  list-style-type: none;
 }
 
 // .sidenav a {
