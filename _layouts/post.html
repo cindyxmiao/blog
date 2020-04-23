@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: home-default
 ---
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 <br>
+{%- if page.emoji -%}
+<i id="emoji" class="em {{page.emoji}}" aria-role="presentation"></i>
+{%- endif -%}
   <header class="post-header">
     <h2 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
     <p class="post-meta">

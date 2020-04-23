@@ -6,13 +6,14 @@ body {
   margin-top: 3em;
   width: 20em;
   position: relative;
-  // margin-left:auto;
   visibility: hidden;
   padding-left: 2em;
   padding-right: 2em;
   background-color: blue;
   margin-right: 2em;
-
+  @media (max-width:961px){/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    display: none;
+  }
 }
 
 .sidenav {
@@ -22,9 +23,9 @@ body {
   padding-right: 2em;
   padding-left: 2em;
   margin-right: 2em;
-  // background: lightcoral;
-  // margin-right:auto;
-  // margin-left:auto;
+  @media (max-width:961px){/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    display: none;
+  }
 }
 .popular-posts div{
   border-radius: 1em;
@@ -339,11 +340,16 @@ pre , code {
 /**
  * Page content
  */
-.page-content {
+.home-page-content {
   padding: $spacing-unit 0;
   flex: 1;
   display: flex;
   justify-content: center;
+}
+
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1;
 }
 
 .page-heading {
