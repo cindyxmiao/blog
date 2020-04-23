@@ -14,6 +14,7 @@ body {
   @media (max-width:961px){/* tablet, landscape iPad, lo-res laptops ands desktops */ 
     display: none;
   }
+  min-width: 12em;
 }
 
 .sidenav {
@@ -26,6 +27,7 @@ body {
   @media (max-width:961px){/* tablet, landscape iPad, lo-res laptops ands desktops */ 
     display: none;
   }
+  min-width: 12em;
 }
 .popular-posts div{
   border-radius: 1em;
@@ -377,7 +379,8 @@ pre , code {
 
 .post-link {
   display: block;
-  @include relative-font-size(2.1);
+  @include relative-font-size(1.8);
+  letter-spacing: -0.02em;
   line-height: $base-line-height/1.2;
 }
 
