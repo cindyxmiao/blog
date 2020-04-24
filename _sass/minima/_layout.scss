@@ -27,24 +27,26 @@
   min-width: 12em;
 }
 .popular-posts div{
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding: 0 0 0 30px;
+  background-color:#dfebf7;
 }
 
-.popular-posts div:hover{
-  background-color: #f5f7f9;
-}
+// .popular-posts div:hover{
+//   background-color: #f5f7f9;
+// }
 
 
 .popular-posts li{
   display: list-item;
   font-size: 1em;
   padding: 10px 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .popular-posts{
   margin-left: 0px;
-  // list-style-type: none;
+  list-style-type: none;
   //
 }
 
