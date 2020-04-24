@@ -1,7 +1,4 @@
 /*Side Bar*/
-body {
-  font-family: "Lato", sans-serif;
-}
 .useless-sidenav{
   margin-top: 3em;
   width: 20em;
@@ -380,7 +377,6 @@ pre , code {
 .post-link {
   display: block;
   @include relative-font-size(1.8);
-  letter-spacing: -0.02em;
   line-height: $base-line-height/1.2;
 }
 
