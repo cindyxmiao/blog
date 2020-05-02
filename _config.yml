@@ -19,7 +19,7 @@ author: Cindy
 description: >- # this means to ignore newlines until "baseurl:"
   a UBC engineering student blog
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cindyxmiao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  cindyxmiao
 
