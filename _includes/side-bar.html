@@ -1,13 +1,17 @@
 <div class="sidenav">
   <h2>Top Posts</h2>
   <ul class="popular-posts">
-    <div><li>
-        <a class = "posts-button" href="{{site.baseurl}}/UBC-first-year-engineering-courses/"
+    <div>
+      <li>
+        <a
+          class="posts-button"
+          href="{{site.baseurl}}/UBC-first-year-engineering-courses/"
           >UBC 1st Year Course Guide</a
         >
       </li>
     </div>
-    <div><li>
+    <div>
+      <li>
         <a href="{{site.baseurl}}/first-year-engineering-at-UBC/"
           >My First Year experience</a
         >
@@ -28,4 +32,27 @@
       </li>
     </div>
   </ul>
+  <br />
+  {% if page.emoji %}
+  <!-- do nothing if page has an emoji variable set, since then it is a post, and I don't want to display
+  the about me icon on posts. This isn't a very good way of doing this, but I don't know how else to separate
+  posts from pages... -->
+  {% else %}
+  <div class="intro-abt-me" style="text-align: center; max-width: 300px; ">
+    <img
+      id="icon"
+      src="{{site.baseurl}}/assets/img/about-me-circle.PNG"
+      alt="A Drawing of Me"
+      style="max-height:200px;"
+    />
+    <div>
+      <p class="description">
+        Hi there! I’m a 2nd year computer engineering student at UBC. Get to
+        know more <a href="{{site.baseurl}}/about-me">about me</a>, <a href="{{site.baseurl}}/ask-me-anything">ask me</a> a
+        question, or read on!
+      </p>
+    </div>
+    {% endif %}
+    <br />
+  </div>
 </div>

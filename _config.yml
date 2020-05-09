@@ -52,6 +52,11 @@ paginate_path: "/page:num/"
 google_analytics: UA-146338294-1
 
 
+#disqus comments
+#disqus: 
+#shortname: https-cindyxmiao-github-io-blog
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
