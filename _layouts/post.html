@@ -1,31 +1,55 @@
 ---
 layout: home-default
-
 ---
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-<br>
-{%- if page.emoji -%}
-<i id="emoji" class="em {{page.emoji}}" aria-role="presentation"></i>
-{%- endif -%}
+<article
+  class="post h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
+  <br />
+  {%- if page.emoji -%}
+  <i id="emoji" class="em {{page.emoji}}" aria-role="presentation"></i>
+  {%- endif -%}
   <header class="post-header">
-    <h2 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
+    <h2 class="post-title p-name" itemprop="name headline">
+      {{ page.title | escape }}
+    </h2>
     <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+      <time
+        class="dt-published"
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+      >
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+        -%} {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-         <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"
+        ><span class="p-author h-card" itemprop="name"
+          >{{ page.author }}</span
+        ></span
+      >
+      {%- endif -%}
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-<!-- Comments Form -->
-<!-- <form method="POST" action="https://dev.staticman.net/v3/entry/cindyxmiao/blog/master/comments">
+ 
+ 
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  {%- include back-button.html -%}
+  <p><i>
+    Go to the <a href= "{{site.baseurl}}/">homepage</a>, <a href="{{site.baseurl}}/ask-me-anything">ask me</a> a
+    question, or learn more <a href="{{site.baseurl}}/about-me">about me</a>.</i>
+  </p>
+  
+
+  <!-- Comments Form -->
+  <!-- <form method="POST" action="https://dev.staticman.net/v3/entry/cindyxmiao/blog/master/comments">
   <input name="options[redirect]" type="hidden" value="https://cindyxmiao.github.io/blog/">
 
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
