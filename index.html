@@ -32,10 +32,13 @@ layout: home-default
 
       <!-- different css for images vs comics-->
       {%- if post.img -%}
-      <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage"> 
-      {%- endif -%}
-      {%- if post.comic -%}
-      <img src="{{ site.baseurl}}/{{ post.comic }}" id="comicHomeImage"> 
+        {% if post.img-style == "top"%}
+        <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage" style = "object-position: 50% 0%"> 
+        {%- elsif  post.img-style == "comic" -%}
+        <img src="{{ site.baseurl}}/{{ post.img }}" id="comicHomeImage"> 
+        {% else %}
+        <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage"> 
+        {% endif %}
       {%- endif -%}
 
       <a href="{{ post.url | relative_url }}" class = "continue">Continue reading &raquo; </a> 
