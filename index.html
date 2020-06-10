@@ -29,16 +29,24 @@ layout: home-default
       {%- if post.summary -%}
       <p> {{post.summary}}</p> 
       {%- endif -%}
-
-      <!-- different css for images vs comics-->
       {%- if post.img -%}
+        {%- if post.webp -%}
+        <picture>
+          <source srcset="{{site.baseurl}}//assets/img/{{post.webp}}" type="image/webp">
+          <source srcset="{{site.baseurl}}/{{post.img}}" type="image/jpeg"> 
+        {%- endif -%}
+        <!-- different css for images vs comics-->
+        
         {% if post.img-style == "top"%}
-        <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage" style = "object-position: 50% 0%"> 
-        {%- elsif  post.img-style == "comic" -%}
-        <img src="{{ site.baseurl}}/{{ post.img }}" id="comicHomeImage"> 
-        {% else %}
-        <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage"> 
+          <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage" style = "object-position: 50% 0%"> 
+          {%- elsif  post.img-style == "comic" -%}
+          <img src="{{ site.baseurl}}/{{ post.img }}" id="comicHomeImage"> 
+          {% else %}
+          <img src="{{ site.baseurl}}/{{ post.img }}" id="homeimage"> 
         {% endif %}
+        {%- if post.webp -%}
+        </picture>
+        {%- endif -%}
       {%- endif -%}
 
       <a href="{{ post.url | relative_url }}" class = "continue">Continue reading &raquo; </a> 

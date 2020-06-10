@@ -8,6 +8,7 @@ permalink: /UBC-first-year-engineering-courses/
 emoji: "em-spiral_calendar_pad"
 custom-css: course-review
 img: /assets/img/chalk_board.JPG
+webp: chalk_board.webp
 ---
 
 <!-- Add icon library -->
@@ -97,34 +98,41 @@ img: /assets/img/chalk_board.JPG
 <div class="slideshow-container">
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <img
-      class="imghorizontal"
-      src="{{site.baseurl}}/assets/img/course_review/chair1.jpg"
-    />
+    <picture>
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair1.webp" type="image/webp">
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair1.jpg" type="image/jpeg"> 
+      <img
+        class="imghorizontal"
+        src="{{site.baseurl}}/assets/img/course_review/chair1.jpg"
+      />
+    </picture>
     <div class="text">Cardboard Chair Disassembled</div>
   </div>
 
   <div class="mySlides fade">
-    <img
-      class="imghorizontal"
-      src="{{site.baseurl}}/assets/img/course_review/chair2.JPG"
-    />
+    <picture>
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair2.webp" type="image/webp">
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair2.jpg" type="image/jpeg"> 
+        <img class="imghorizontal"src="{{site.baseurl}}/assets/img/course_review/chair2.jpg">
+    </picture>
     <div class="text">Cardboard Chair Standing</div>
   </div>
 
   <div class="mySlides fade">
-    <img
-      class="imghorizontal"
-      src="{{site.baseurl}}/assets/img/course_review/chair3.JPG"
-    />
+    <picture>
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair3.webp" type="image/webp">
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair3.jpg" type="image/jpeg"> 
+      <img class="imghorizontal" src="{{site.baseurl}}/assets/img/course_review/chair3.jpg"/>
+    </picture>
     <div class="text">Cardboard Chair Standing</div>
   </div>
 
   <div class="mySlides fade">
-    <img
-      class="imghorizontal"
-      src="{{site.baseurl}}/assets/img/course_review/chair4.JPG"
-    />
+    <picture>
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair4.webp" type="image/webp">
+        <source srcset="{{site.baseurl}}/assets/img/course_review/chair4.jpg" type="image/jpeg"> 
+      <img class="imghorizontal" src="{{site.baseurl}}/assets/img/course_review/chair4.jpg"/>
+    </picture>
     <div class="text">Cardboard Chair Poster</div>
   </div>
 
