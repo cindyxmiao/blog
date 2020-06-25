@@ -30,9 +30,10 @@ layout: home-default
       <p> {{post.summary}}</p> 
       {%- endif -%}
       {%- if post.img -%}
+      <!-- to use webq format for homepage post images, set YAML variable webq to name of webq file -->
         {%- if post.webp -%}
         <picture>
-          <source srcset="{{site.baseurl}}//assets/img/{{post.webp}}" type="image/webp">
+          <source srcset="{{site.baseurl}}/assets/img/{{post.webp}}" type="image/webp">
           <source srcset="{{site.baseurl}}/{{post.img}}" type="image/jpeg"> 
         {%- endif -%}
         <!-- different css for images vs comics-->

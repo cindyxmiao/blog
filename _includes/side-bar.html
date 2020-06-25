@@ -39,17 +39,15 @@
   posts from pages... -->
   {% else %}
   <div class="intro-abt-me" style="text-align: center; max-width: 300px; ">
-    <img
-      id="icon"
-      src="{{site.baseurl}}/assets/img/about-me-circle.PNG"
-      alt="A Drawing of Me"
-      style="max-height:200px;"
-    />
+      <picture>
+          <source srcset="{{site.baseurl}}/assets/img/about-me-circle.webp" type="image/webp">
+          <source srcset="{{site.baseurl}}/assets/img/about-me-circle.png" type="image/png">
+        <img  style="max-height:200px;"  alt="A Drawing of Me" src="{{site.baseurl}}/assets/img/about-me-circle.png"/>
+      </picture>
     <div>
       <p class="description">
-        Hi there! I’m a 2nd year computer engineering student at UBC. Get to
-        know more <a href="{{site.baseurl}}/about-me">about me</a>, <a href="{{site.baseurl}}/ask-me-anything">ask me</a> a
-        question, or read on!
+        Hi there! I’m a 3rd year computer engineering student at UBC. Get to
+        know more <a href="{{site.baseurl}}/about-me">about me</a> or read on!
       </p>
     </div>
     {% endif %}
