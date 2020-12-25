@@ -2,6 +2,7 @@
 title: "The Online TA Experience"
 summary: "An overview of my experience as a teaching assistant in online class, and 
 some interesting moments..."
+permalink: /the-online-teaching-assistant-ta-experience/
 emoji: "em-paperclip"
 ---
 This term, I was a teaching assistant for APSC 160, a first year engineering class where they teach introduction to programming in C. I applied via the department of computer science in the summer, where we were asked to pick our top 3 choices, and write a statement about why we wanted to TA that class. Because they always consider returning teaching assistants first (because of the teaching union) before any new applicants, I was really excited when I received an offer. I think it was because nobody wanted to TA an online semester. Let’s get into the details!
