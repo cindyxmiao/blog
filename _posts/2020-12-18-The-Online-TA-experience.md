@@ -11,7 +11,7 @@ My main responsibilities were to invigilate labs over zoom, and help out in lect
 
 The lecture aspect consisted of helping students in breakout rooms where they’d do the lecture worksheet. Finally, I also did some marking, which was mostly evaluating code style, since there was an autograder to mark output. But if the students’ code didn’t get full autograder marks, we had to basically debug their code, and take off marks accordingly for each mistake they made. 
 
-Overall, TA-ing was a super fun experience albeit being online. Except for one week, where I did 12 hours of marking on top of 8 hours of usual lecture/labs, it was mostly a consistent 8 hour/week time commitment, so I was able to take the regular five course load of five courses this term. The pay was $20.30 per hour, which is pretty decent, until you realize minimum wage is $15 next year. 
+Overall, TA-ing was a super fun experience albeit being online. Except for one week, where I did 12 hours of marking on top of 8 hours of usual lecture/labs, it was mostly a consistent 8 hour/week time commitment, so I was able to take the regular course load (5 courses) this term. The pay was $20.30 per hour, which is pretty decent, until you realize minimum wage is $15 next year. 
 
 #### *Favorite TA work?*
 
@@ -46,7 +46,7 @@ Even as a third year student whose Ta-ing a first year class, sometimes (very of
 
 #### *What if you gave a wrong answer?*
 
-I think this happens more often than we think. We’d like to believe that the professors know everything (and never ever make mistakes), and so being a TA, sometimes one feels like they too have to know everything and be correct. Some professors even like to say “I love people that challenge my ideas, so feel free to prove my wrong” but I’ve never seen it happen.
+I think this happens more often than we think. We’d like to believe that the professors know everything (and never ever make mistakes), and so being a TA, sometimes one feels like they too have to know everything and be correct. Some professors even like to say “I love people that challenge my ideas, so feel free to prove me wrong” but I’ve never seen it happen.
 
 This time, in one of my lecture TA sessions, I heard the professor apologize for a mistake they made in the previous lecture, and explain the correct way. Though I was super surprised, I realized I admired the professor way more for their sincerity, and cared much less about them making the mistake itself. 
 
