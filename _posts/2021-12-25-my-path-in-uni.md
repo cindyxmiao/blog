@@ -1,12 +1,12 @@
 ---
 title: "My (Circular) Path in University"
-summary: "How I initially applied to science, then did my first year in engineering, second year in computer engineering, and then transferred back to science to complete a degree in computer science; a summary of my path and decision-making process in university."
+summary: "How I initially applied to science, then did my first year in engineering, second year in computer engineering, and then transferred back to science to complete a degree in computer science; a summary of my path and rating my decisions retrospectively."
 permalink: /my-circular-path-in-university/
 emoji: "em-scarf"
 ---
-> *First of all, Merry Christmas and can’t believe we got a real white Christmas this year! I would love to go outside and enjoy the snow but I’m stuck in my room for self-isolation because I picked up covid earlier this week, then drove all the way to UBC to pick up a rapid covid test, only to find out that it has to be done 3-5 days after symptoms appear. So I'll be writing some new posts in the meantime.*
+> *First of all, Merry Christmas and can’t believe we got a real white Christmas this year! I would love to go out and enjoy the snow but I’m stuck in my room for self-isolation because I picked up covid earlier this week, then drove all the way to UBC to pick up a rapid covid test, only to find out that it has to be done 3-5 days after symptoms appear. So I'll be writing some new posts in the meantime.*
 
-*How I initially applied to science, then did my first year in engineering, second year in computer engineering, and then transferred back to science to complete a degree in computer science; a summary of my path and rating my decisions.*
+*How I initially applied to science, then did my first year in engineering, second year in computer engineering, and then transferred back to science to complete a degree in computer science; a summary of my path and rating my decisions retrospectively.*
 
 ### Highschool: deciding what to study
 
@@ -50,7 +50,7 @@ MATH 220 had weekly proof homework, which again took me anywhere from 10-20 hour
 
 #### <ins>2. Unreasonable Professor(s)<ins>
 
-If you go into computer engineering or electrical engineering, you will know what I’m talking about. The ece department is notable for its teaching team. And professors make a huge difference. Some of my professors in ece made me want to not go to class ever.
+If you go into computer engineering or electrical engineering, you will know what I’m talking about. The ece department is notable for its teaching team. And professors make a huge difference. Some of my professors in ece made me not want to go to class ever.
 
 **...**
 
@@ -60,7 +60,7 @@ Thus during winter break, I handed in my application to transfer to computer sci
 
 ### Third year/fourth year in computer science
 
-When I started in computer science, I couldn’t believe that I could pick my own classes, and actually have a reasonable workload (and not do 6 courses). I was able to do 5 courses (CPSC 310, 320, 317 + 2 electives), a TAship, and my job search, all in 1 term, and still found it much better than computer engineering. I also really appreciated the nice professors.
+When I started in computer science, I couldn’t believe that I could pick my own classes, and actually have a reasonable workload (and not do 6 courses). I was able to do 5 courses (CPSC 310, 320, 317 + 2 electives), a TAship, and my summer internship search, all in 1 term, and still found it much better than computer engineering. I also really appreciated the nice professors.
 
 In conclusion, the path comes full circle, as I'm back in the faculty of science, exactly where I so badly wanted to transfer out of before starting first year. For the longest time, I thought I really did all of that for nothing. However, someone told me that perhaps I wouldn't have gone into computer science if I stayed in general sciences in first year. And I kind of agree with that. I don't think any experience is wasted experience, and sometimes we pick the wrong thing, but its not too late to try something else.
 
