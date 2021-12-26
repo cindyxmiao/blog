@@ -1,32 +1,32 @@
-p{
+p {
   color: black;
 }
 
-#icon{
+#icon {
   max-height: 400px;
   margin: 30px 0 0;
- 
+
   display: inline-block;
 }
 
-.description{
+.description {
   margin: 10px 110px 0;
   display: inline-block;
 }
-h2{
+h2 {
   margin: 10px 0 20px;
   font-size: 2.3em;
   font-weight: bold;
 }
 
-#about-wrapper{
-  padding-left: 20px;
-  padding-right: 20px;
+#about-wrapper {
+  margin-left: auto;
+  width: 70%;
   text-align: left;
 }
 
 @media screen and (max-width: 768px) {
-  .description{
+  .description {
     margin: 0 5px 0;
     display: inline-block;
   }

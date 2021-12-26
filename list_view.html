@@ -1,0 +1,26 @@
+---
+layout: default
+title: List view
+display-title: list view
+permalink: /list-view/
+---
+<!-- post list -->
+<div style="margin-left:auto; width: 90%;">
+
+    {% for post in site.posts %}
+    <div>
+        <h3 style="margin-bottom:-0.5em; margin-top: 0.5em;">
+            <a href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a>
+        </h3>
+        <h5>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+        </h5>
+
+
+    </div>
+    {% endfor %}
+
+</div>
