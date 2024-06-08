@@ -1,10 +1,9 @@
 ---
 title: "I’m graduated! Farewell but not farewell"
-summary: "In my last post on this blog, I will be responding to my earlier post 'What Does Success Look Like?', summarizing the stats of the blog since its inception in 2019, and discussing the end of this blog and transitioning to a new blog!"
+summary: "In my last post on this blog, I will be responding to my earlier post: What Does Success Look Like, summarizing the stats of the blog since its inception in 2019, and discussing the end of this blog and transitioning to a new blog!"
 permalink: /farewell-but-not-farewell/
-emoji: "em-shamrock"
+emoji: "em-sunny"
 ---
-___
 
 ### Graduation and goals
 
@@ -21,7 +20,7 @@ I'm glad to say that I've pretty much completed these goals, with the exception 
 
 However, in my 2019 post, the tone was that of confusion—
 
-I knew these goals were something I wanted, but at the same time, I wondered: were these goals really my own, or were they simply a product of the time and place I lived<sup><a href="#2">2</a></sup>? Moreover, would I feel differently once having achieved these goals—would I be more successful or more happy?
+I knew these goals were something I wanted, but at the same time, I wondered: were these goals really my own, or were they simply a product of the time and place I lived<sup><a href="#2">2</a></sup>? Moreover, would I feel differently once having achieved these goals: would I be more successful or happy?
 
 Now having completed these goals, I realized that life and happiness didn't rely on simply completing goals. My prof once told us that a hyper-focus on goals is a commitment to yourself that you won't be happy until that goal is achieved. Yet once achieved, you feel empty because it simply wasn't the answer to begin with. Likewise, my younger self would've tried to find purpose through setting goals, where I didn't want to waste my time doing things that weren't furthering my goals. 
 
@@ -39,7 +38,7 @@ Most of the audience (82.19%) is located in Canada, with USA, India, and China f
 
 38% of users use Windows, 26% use mac, and 26% are on iOS (mobile). 
 
-The most popular browser is chrome (58%), safari (33%) and firefox (0.06%)*—if you are a firefox user, why??*
+The most popular browser is chrome (58%), safari (33%) and firefox (0.06%)*—if you are a firefox user, please tell me why.*
 
 <img src="{{site.baseurl}}/assets/img/ga_data_blog.JPG" alt="Google Analytics Data" style="margin-top: 20px;"> 
 
@@ -64,7 +63,7 @@ The third reason is actually non-tech related. Since I graduated university, I w
 
 ### Concluding remarks
 
-And there you have it. The last post on this blog. Thanks for everyone that has followed me on the blog throughout my uni experience, or simply visited a page in this blog. I hope you found helpful and useful information. Wishing everyone a happy grad (if you're graduating too), and hope to see you on my new blog!
+And there you have it. The last post on this blog. Thanks for everyone that has followed me on the blog throughout my uni experience, or simply visited a page in this blog. I hope you found helpful and useful information. Wishing everyone a happy grad (if you're graduating too), and hope to see you on my new blog ➡➡➡ [cindymiao.ca/](https://cindymiao.ca/)⬅⬅⬅
 
 -*Cindy*
 
