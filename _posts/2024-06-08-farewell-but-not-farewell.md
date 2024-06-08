@@ -4,14 +4,17 @@ summary: "I am the last post on this blog."
 permalink: /farewell-but-not-farewell/
 emoji: "em-sunflower"
 ---
-In this post, I'll be:
+In this post, I'll will...
 - responding to my post *What Does Success Look Like?*, written in 2019
 - summarizing the stats of the blog since its start
 - discussing the end of this blog and transitioning to a new blog!
+___
 
 ### Graduation and goals
 
-This past May, I walked across the stage at Chan Centre, holding a heavy piece of paper that proved the entirety of my university experience in my hand. Looking out to a pitch black audience, I smiled for the camera flashes without knowing where the cameras were, and tried to, but needlessly failed, to locate the tiny heads of my family. And so, after shaking hands with the chancellor, I took home the piece of paper that meant I was officially finished 5 bittersweet years of a computer science education (1).
+<p>
+This past May, I walked across the stage at Chan Centre, holding a heavy piece of paper that proved the entirety of my university experience in my hand. Looking out to a pitch black audience, I smiled for the camera flashes without knowing where the cameras were, and tried to, but needlessly failed, to locate the tiny heads of my family. And so, after shaking hands with the chancellor, I took home the piece of paper that meant I was officially finished 5 bittersweet years of a computer science education<sup><a href="#1">1</a></sup>.
+</p>
 
 And I thought to myself, what better way to conclude this chapter of my life than to reflect on the post I've written at the start of my university and blogging journey in 2019. (The post in question: [What Does Success Look Like?](https://cindyxmiao.github.io/blog/searching-for-meaning/))
 
